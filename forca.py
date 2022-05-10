@@ -73,11 +73,13 @@ def perdeu():
         linha('-=', 20)
         print('desistiu')
         print(f'A resposta era: {escolha}')
+        print(desenho(9))
         derrota = True
     elif tentativa_Valida >= 10:
         linha('-=', 20)
         print('numero de tentativas excedido')
         print(f'A resposta era: {escolha} ')
+        print(desenho(9))
         derrota = True
     return derrota
 
@@ -101,8 +103,6 @@ def main():
     linha('-=', 15)
     while True:
         if derrota is True:
-            sleep(2)
-            print(desenho(10))
             break
         if vitoria is True:
             break
